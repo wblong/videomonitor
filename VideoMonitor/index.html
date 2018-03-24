@@ -1,0 +1,238 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="Content/zTree.min.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            padding-top: 45px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+        .row{
+            margin:auto;
+        }
+        footer{
+            text-align:center;
+            background-color:azure;
+        }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/bootstrap-apple-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/bootstrap-apple-114x114.png">
+</head>
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="#">天睿空间</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">主页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                    <p class="navbar-text pull-right">登录<a href="#">用户名</a></p>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+        
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">海康</li>
+                        <li class="active"><a href="#">Link</a></li>
+                        <li id="tree" class="ztree"></li>
+                        <li class="nav-header">博世</li>
+                        <li ><a href="#">Link</a></li>
+                        <li class="nav-header">天地伟业</li>
+                        <li ><a href="#">Link</a></li>
+                    </ul>
+                   
+                    <!--<div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne">
+                                        海康
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <ul id="htree" class="ztree"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseTwo">
+                                        博世
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul id="btree" class="ztree"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseThree">
+                                        天地伟业
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul id="ttree" class="ztree"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                 
+                </div><!--/.well -->
+            </div><!--/span-->
+            <div class="span9">
+                <div class="row">
+                    <div id="VideoCarousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item"><img src="images/html5_logo.png" alt="HTML5 logo" width="900" height="60" /></div>
+                            <div class="item"><img src="images/javascript-logo.png" alt="JS logo" width="900" height="60" /></div>
+                            <div class="item"><img src="images/schema.png" alt="Schema.org logo" width="900" height="60" /></div>
+                            <div class="item"><img src="images/json.gif" alt="JSON logo" width="900" height="60" /></div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#VideoCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#VideoCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+            </div><!--/span-->
+        </div><!--row-->
+
+    <hr>
+
+    <footer>
+        <p>&copy; 北京天睿空间股份有限公司 2018</p>
+    </footer>
+
+    </div><!--/.fluid-container-->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="Scripts/jquery.ztree.all-3.5.min.js"></script>
+    <script type="text/javascript">
+    var zTree;
+    var setting = {
+        view: {
+            dblClickExpand: false,
+            showLine: true,
+            selectedMulti: false
+        },
+        data: {
+            simpleData: {
+                enable: true,
+                idKey: "id",
+                pIdKey: "pId",
+                rootPId: ""
+            }
+        },
+        callback: {
+            beforeClick: function (treeId, treeNode) {
+                var zTree = $.fn.zTree.getZTreeObj("tree");
+                if (treeNode.isParent) {
+                    zTree.expandNode(treeNode);
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    };
+
+    var zNodes = [
+        { id: 1, pId: 0, name: "水果", open: true },
+        { id: 101, pId: 1, name: "苹果" },
+        { id: 102, pId: 1, name: "香蕉" },
+        { id: 103, pId: 1, name: "梨" },
+        { id: 10101, pId: 101, name: "红富士苹果" },
+        { id: 10102, pId: 101, name: "红星苹果" },
+        { id: 10103, pId: 101, name: "嘎拉" },
+        { id: 10104, pId: 101, name: "桑萨" },
+        { id: 10201, pId: 102, name: "千层蕉" },
+        { id: 10202, pId: 102, name: "仙人蕉" },
+        { id: 10203, pId: 102, name: "吕宋蕉" },
+    ];
+
+    $(document).ready(function () {
+        var htree = $("#tree");
+       
+        /**
+         * zTree 初始化方法：$.fn.zTree.init(t, setting, zNodes)
+         * t:用于展现 zTree 的 DOM 容器
+         * setting:zTree 的配置数据
+         * zNodes:zTree 的节点数据
+         *
+         */
+
+        htree = $.fn.zTree.init(htree, setting, zNodes);
+       
+    });
+    </script>
+
+
+
+
+</body>
+</html>
